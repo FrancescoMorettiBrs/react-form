@@ -1,4 +1,4 @@
-import { use, useState } from "react";
+import { useState } from "react";
 import data from "../data.js";
 
 const App = () => {
@@ -20,11 +20,13 @@ const App = () => {
 
   return (
     <div>
-      <form onSubmit={gestisciSubmit}>
-        <input type="text" value={newTitle} onChange={(event) => setNewTitle(event.target.value)} placeholder="Inserisci il titolo" />
-        <button type="submit">Aggiungi titolo</button>
+      <form className="container" onSubmit={gestisciSubmit}>
+        <input className="input" type="text" value={newTitle} onChange={(event) => setNewTitle(event.target.value)} placeholder="Inserisci il titolo" />
+        <button type="submit" className="btn">
+          Aggiungi titolo
+        </button>
       </form>
-      <div>
+      <div className="faq">
         {list.map((curList) => {
           return <h2 key={curList.id}>{curList.title}</h2>;
         })}
