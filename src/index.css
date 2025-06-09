@@ -8,7 +8,7 @@
   display: flex;
   max-width: 1200px;
   width: 80%;
-  padding: 20px;
+  padding: 15px;
 }
 
 .btn {
@@ -19,13 +19,43 @@
   color: white;
   font-weight: 800;
   border: 0;
+  cursor: pointer;
 }
 
 .input {
   padding: 10px;
   border-radius: 10px;
 }
+
 .faq {
   padding: 10px;
   margin-left: 20px;
+}
+
+.title {
+    border: 1px solid black;
+    padding: 10px;
+    width: 80%;
+    margin-right: 15px;
+}
+
+.delete-btn {
+    padding: 10px 20px;
+    background-color: crimson;
+    color: white;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.update-btn {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 15px;
+    border: none;
 }
